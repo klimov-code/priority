@@ -46,7 +46,7 @@ const PriorityView: React.FC<IView> = ({
       onReorder(startIndex, endIndex);
     }
 
-    if (type.includes('SUBPRIORITY')) {
+    if (type.startsWith('SUBPRIORITY')) {
       const [_, id] = source.droppableId.split(' ');
       const parentId = parseInt(id, 10);
       const parentIndex = active.findIndex(priority => parentId === priority.id);
