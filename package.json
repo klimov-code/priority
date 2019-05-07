@@ -9,7 +9,7 @@
     "prebuild": "rm -rf dist",
     "build": "parcel build index.html --experimental-scope-hoisting",
     "format": "prettier --write",
-    "lint": "tslint -p tsconfig.json -c tslint.json -e 'node_modules/**/*' 'src/**/*.{j,t}s?(x)'"
+    "lint": "tslint -p tsconfig.json -c tslint.json -e 'node_modules/**/*'"
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
