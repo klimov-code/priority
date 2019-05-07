@@ -1,0 +1,29 @@
+const actions = {
+  FETCH_REQUEST: 'app/statuses/FETCH_REQUEST',
+  FETCH_SUCCESS: 'app/statuses/FETCH_SUCCESS',
+  FETCH_FAILURE: 'app/statuses/FETCH_FAILURE',
+
+  CREATE_REQUEST: 'app/statuses/CREATE_REQUEST',
+  CREATE_SUCCESS: 'app/statuses/CREATE_SUCCESS',
+  CREATE_FAILURE: 'app/statuses/CREATE_FAILURE',
+
+  UPDATE_REQUEST: 'app/statuses/UPDATE_REQUEST',
+  UPDATE_SUCCESS: 'app/statuses/UPDATE_SUCCESS',
+  UPDATE_FAILURE: 'app/statuses/UPDATE_FAILURE',
+  UPDATE_PRIORITY: 'app/statuses/UPDATE_PRIORITY',
+
+  REORDER_REQUEST: 'app/statuses/REORDER_REQUEST',
+  REORDER_SUCCESS: 'app/statuses/REORDER_SUCCESS',
+  REORDER_FAILURE: 'app/statuses/REORDER_FAILURE',
+  REORDER_LIST: 'app/statuses/REORDER_LIST',
+
+  ARCHIVE_REQUEST: 'app/statuses/ARCHIVE_REQUEST',
+  ARCHIVE_SUCCESS: 'app/statuses/ARCHIVE_SUCCESS',
+  ARCHIVE_FAILURE: 'app/statuses/ARCHIVE_FAILURE',
+
+  RESTORE_REQUEST: 'app/statuses/RESTORE_REQUEST',
+  RESTORE_SUCCESS: 'app/statuses/RESTORE_SUCCESS',
+  RESTORE_FAILURE: 'app/statuses/RESTORE_FAILURE',
+};
+
+export { actions };

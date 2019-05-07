@@ -1,0 +1,228 @@
+﻿{
+  "active": [
+    {
+      "id": 585,
+      "name": "Новый",
+      "color": "#fd89c3",
+      "isSubpriority": false,
+      "type": 0,
+      "order": 0,
+      "isArchived": false,
+      "parentId": null,
+      "subpriorities": []
+    },
+    {
+      "id": 587,
+      "name": "Обзвон",
+      "color": "#ff9800",
+      "isSubpriority": false,
+      "type": 1,
+      "order": 1,
+      "isArchived": false,
+      "parentId": null,
+      "subpriorities": []
+    },
+    {
+      "id": 580,
+      "name": "Интервью не состоялось",
+      "color": "#009687",
+      "isSubpriority": false,
+      "type": 1,
+      "order": 2,
+      "isArchived": false,
+      "parentId": null,
+      "subpriorities": []
+    },
+    {
+      "id": 589,
+      "name": "Очень длинное согласование статуса",
+      "color": "#009687",
+      "isSubpriority": false,
+      "type": 1,
+      "order": 3,
+      "isArchived": false,
+      "parentId": null,
+      "subpriorities": [
+        {
+          "id": 583,
+          "name": "Согласован",
+          "color": "#fccb86",
+          "isSubpriority": true,
+          "type": 1,
+          "order": 0,
+          "isArchived": false,
+          "parentId": 589,
+          "subpriorities": []
+        },
+        {
+          "id": 584,
+          "name": "Не согласован",
+          "color": "#ff6536",
+          "isSubpriority": true,
+          "type": 1,
+          "order": 1,
+          "isArchived": false,
+          "parentId": 589,
+          "subpriorities": []
+        }
+      ]
+    },
+    {
+      "id": 586,
+      "name": "Приглашение",
+      "color": "#9b3aee",
+      "isSubpriority": false,
+      "type": 1,
+      "order": 4,
+      "isArchived": false,
+      "parentId": null,
+      "subpriorities": []
+    },
+    {
+      "id": 590,
+      "name": "Предложение",
+      "color": "#ff2534",
+      "isSubpriority": false,
+      "type": 1,
+      "order": 5,
+      "isArchived": false,
+      "parentId": null,
+      "subpriorities": [
+        {
+          "id": 582,
+          "name": "Предложение отклонено",
+          "color": "#9c1ab1",
+          "isSubpriority": true,
+          "type": 1,
+          "order": 0,
+          "isArchived": false,
+          "parentId": 590,
+          "subpriorities": []
+        }
+      ]
+    },
+    {
+      "id": 591,
+      "name": "Не пришел на собеседование с руководителем",
+      "color": "#dab0ff",
+      "isSubpriority": false,
+      "type": 1,
+      "order": 6,
+      "isArchived": false,
+      "parentId": null,
+      "subpriorities": []
+    },
+    {
+      "id": 592,
+      "name": "Отказ кандидата",
+      "color": "#ffc100",
+      "isSubpriority": false,
+      "type": 1,
+      "order": 7,
+      "isArchived": false,
+      "parentId": null,
+      "subpriorities": []
+    },
+    {
+      "id": 594,
+      "name": "Принят на работу",
+      "color": "#c70056",
+      "isSubpriority": false,
+      "type": 1,
+      "order": 8,
+      "isArchived": false,
+      "parentId": null,
+      "subpriorities": []
+    },
+    {
+      "id": 595,
+      "name": "Резерв",
+      "color": "#d1d1d1",
+      "isSubpriority": false,
+      "type": 0,
+      "order": 9,
+      "isArchived": false,
+      "parentId": null,
+      "subpriorities": []
+    },
+    {
+      "id": 596,
+      "name": "Архив",
+      "color": "#46af4a",
+      "isSubpriority": false,
+      "type": 0,
+      "order": 10,
+      "isArchived": false,
+      "parentId": null,
+      "subpriorities": []
+    },
+    {
+      "id": 24428,
+      "name": "Очень страшный статус (бу)",
+      "color": "#f326c0",
+      "isSubpriority": false,
+      "type": 2,
+      "order": 11,
+      "isArchived": false,
+      "parentId": null,
+      "subpriorities": []
+    },
+    {
+      "id": 24429,
+      "name": "Архивный",
+      "color": "#4a4a4a",
+      "isSubpriority": false,
+      "type": 0,
+      "order": 12,
+      "isArchived": false,
+      "parentId": null,
+      "subpriorities": []
+    },
+    {
+      "id": 24430,
+      "name": "123456789 123456789 123456789 123456789 123456789 123456789 ",
+      "color": "#62dff5",
+      "isSubpriority": false,
+      "type": 0,
+      "order": 13,
+      "isArchived": false,
+      "parentId": null,
+      "subpriorities": [
+        {
+          "id": 24433,
+          "name": "2",
+          "color": "#4a4a4a",
+          "isSubpriority": true,
+          "type": 0,
+          "order": 0,
+          "isArchived": false,
+          "parentId": 24430,
+          "subpriorities": []
+        },
+        {
+          "id": 24432,
+          "name": "1",
+          "color": "#4a4a4a",
+          "isSubpriority": true,
+          "type": 0,
+          "order": 1,
+          "isArchived": false,
+          "parentId": 24430,
+          "subpriorities": []
+        }
+      ]
+    },
+    {
+      "id": 24431,
+      "name": "asdasd",
+      "color": "#4a4a4a",
+      "isSubpriority": false,
+      "type": 1,
+      "order": 14,
+      "isArchived": false,
+      "parentId": null,
+      "subpriorities": []
+    }
+  ],
+  "archive": []
+}
