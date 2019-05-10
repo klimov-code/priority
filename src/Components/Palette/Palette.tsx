@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { PALETTE } from 'Constants';
+import { PALETTE } from '~/Constants';
 
 import { Container, Title, Colors, Color } from './styled';
 

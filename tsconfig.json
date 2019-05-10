@@ -1,18 +1,22 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
     "baseUrl": "src",
-    "outDir": "dist",
-    "target": "esnext",
+    "esModuleInterop": true,
+    "jsx": "react",
+    "lib": ["esnext", "dom"],
     "module": "esnext",
     "moduleResolution": "node",
-    "jsx": "react",
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
+    "paths": {
+      "~/*": ["*"]
+    },
+    "outDir": "dist",
     "resolveJsonModule": true,
-    "lib": ["esnext", "dom"],
+    "rootDir": "src",
+    "target": "esnext",
     "typeRoots": ["node_modules/@types"]
   },
-  "exclude": ["node_modules", "**/*.spec.ts"],
+  "exclude": ["node_modules/**/*", "src/__tests__/**/*.(spec|test).ts"],
   "include": ["src/**/*"]
 }

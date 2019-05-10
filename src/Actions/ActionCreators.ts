@@ -1,5 +1,5 @@
-import { IPriority, IMeta } from 'Definitions';
-import { actions } from 'Actions';
+import { IPriority, IMeta } from '~/Definitions';
+import { actions } from '~/Actions';
 
 const fetchRequest = () => ({
   type: actions.FETCH_REQUEST,

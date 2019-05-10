@@ -1,6 +1,6 @@
 import { Map } from 'immutable';
 
-import { IPriority } from 'Definitions';
+import { IPriority } from '~/Definitions';
 import { getParentIndex } from './getParentIndex';
 
 const getIndex = (store: Map<string, any>, priority: IPriority): Array<number | string> => {

@@ -2,9 +2,9 @@ import { Store, createStore, applyMiddleware, combineReducers, compose } from 'r
 import createSagaMiddleware from 'redux-saga';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
-import { InitialStore } from 'Constants';
-import { PriorityReducer } from 'Reducers';
-import { watchPriority } from 'Sagas';
+import { InitialStore } from '~/Constants';
+import { PriorityReducer } from '~/Reducers';
+import { watchPriority } from '~/Sagas';
 
 const configureStore = (initialStore = InitialStore): Store => {
   const composeEnhancers: any =

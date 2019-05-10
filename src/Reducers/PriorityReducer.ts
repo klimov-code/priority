@@ -1,8 +1,8 @@
 import { Map, fromJS } from 'immutable';
 
-import { IPriority } from 'Definitions';
-import { actions } from 'Actions';
-import { reorderList, getIndex, getParentIndex } from 'Utils';
+import { IPriority } from '~/Definitions';
+import { actions } from '~/Actions';
+import { reorderList, getIndex, getParentIndex } from '~/Utils';
 
 const PriorityReducer = (store: Map<string, any> = null, action: any) => {
   const lastUpdate = Date.now();

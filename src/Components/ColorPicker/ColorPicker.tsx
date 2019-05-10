@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Tippy from '@tippy.js/react';
 
-import { Palette } from 'Components/Palette';
+import { Palette } from '~/Components/Palette';
 
 import { Container, Circle } from './styled';
 

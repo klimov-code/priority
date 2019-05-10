@@ -1,9 +1,9 @@
 {
   "name": "priority",
   "version": "1.0.0",
-  "main": "index.html",
   "license": "MIT",
   "private": true,
+  "rootDir": "src",
   "scripts": {
     "start": "parcel index.html --no-autoinstall --open",
     "prebuild": "rm -rf dist",
@@ -53,6 +53,7 @@
     "tslint-react": "^4.0.0",
     "typescript": "^3.4.5"
   },
+  "//": "im in love with parcel bugs",
   "alias": {
     "Actions": "./src/Actions",
     "Components": "./src/Components",

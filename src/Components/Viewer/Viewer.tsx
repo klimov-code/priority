@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { TYPE } from 'Constants';
-import { IPriority } from 'Definitions';
-import { MenuBox } from 'Components/MenuBox';
-import { Container as ColorContainer, Circle } from 'Components/ColorPicker';
-import { Text, TextBold } from 'Components/styled';
+import { TYPE } from '~/Constants';
+import { IPriority } from '~/Definitions';
+import { MenuBox } from '~/Components/MenuBox';
+import { Container as ColorContainer, Circle } from '~/Components/ColorPicker';
+import { Text, TextBold } from '~/Components/styled';
 
 import { Container, Tooltip } from './styled';
 

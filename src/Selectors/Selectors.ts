@@ -1,7 +1,7 @@
 import { createSelector } from 'reselect';
 import { Map } from 'immutable';
 
-import { IPriority, IValueLabel, IStore } from 'Definitions';
+import { IPriority, IValueLabel, IStore } from '~/Definitions';
 
 const getActivePriority: (store: IStore) => IPriority[] = createSelector(
   [

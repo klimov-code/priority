@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import Select from 'react-select';
 
-import { TYPE_LIST } from 'Constants';
-import { IPriority, IMeta, IValueLabel } from 'Definitions';
-import { ColorPicker } from 'Components/ColorPicker';
-import { Button } from 'Components/Button';
-import { Input } from 'Components/Input';
+import { TYPE_LIST } from '~/Constants';
+import { IPriority, IMeta, IValueLabel } from '~/Definitions';
+import { ColorPicker } from '~/Components/ColorPicker';
+import { Button } from '~/Components/Button';
+import { Input } from '~/Components/Input';
 
 import { Container, Top, Bottom } from './styled';
 

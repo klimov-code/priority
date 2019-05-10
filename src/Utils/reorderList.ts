@@ -1,6 +1,6 @@
 import { List } from 'immutable';
 
-import { IPriority } from 'Definitions';
+import { IPriority } from '~/Definitions';
 
 const reorderList = (
   list: List<IPriority>,

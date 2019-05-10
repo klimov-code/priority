@@ -12,7 +12,6 @@ module.exports = function(api) {
       },
     ],
     'react',
-    'typescript',
   ];
   const plugins = ['transform-runtime'];
 
