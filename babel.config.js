@@ -3,7 +3,7 @@ module.exports = function(api) {
 
   const presets = [
     [
-      'env',
+      '@babel/env',
       {
         targets: {
           esmodules: true,
@@ -11,9 +11,10 @@ module.exports = function(api) {
         useBuiltIns: 'usage',
       },
     ],
-    'react',
+    '@babel/react',
+    '@babel/typescript',
   ];
-  const plugins = ['transform-runtime'];
+  const plugins = ['@babel/transform-runtime'];
 
   return {
     presets,
