@@ -50,9 +50,10 @@ const Editor: React.FC<Partial<IEditor & IPriority>> = props => {
         />
         {!isSubPriority || !parentId ? (
           <Select
+            classNamePrefix={'type'}
             value={TYPE_LIST.find(({ value }) => value === type)}
             options={TYPE_LIST}
-            placeholder={'Select status type'}
+            placeholder={'Select priority type'}
             onChange={(selected: IValueLabel) => setType(selected.value)}
           />
         ) : (
@@ -60,6 +61,7 @@ const Editor: React.FC<Partial<IEditor & IPriority>> = props => {
         )}
         {props.editorType === 'create' ? (
           <Select
+            classNamePrefix={'sub'}
             style={{
               whiteSpace: 'nowrap',
             }}

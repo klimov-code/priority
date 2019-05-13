@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ColorPicker renders correctly 1`] = `
+<div>
+  <div
+    class="sc-ifAKCX hOJEll"
+    tabindex="0"
+  >
+    <div
+      class="sc-EHOje cpQrJT"
+      style="background: rgb(74, 74, 74);"
+    />
+  </div>
+</div>
+`;

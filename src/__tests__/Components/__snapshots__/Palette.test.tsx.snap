@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Palette renders correctly 1`] = `
+<div>
+  <div
+    class="sc-bdVaJa jNHbSE"
+  >
+    <span
+      class="sc-bwzfXH kmvPZI"
+    >
+      Select color
+    </span>
+    <div
+      class="sc-htpNat hYLKwx"
+    >
+      <div
+        class="sc-bxivhb htFudt"
+        style="background: rgb(255, 37, 52);"
+      />
+      <div
+        class="sc-bxivhb htFudt"
+        style="background: rgb(255, 94, 118);"
+      />
+      <div
+        class="sc-bxivhb htFudt"
+        style="background: rgb(253, 137, 195);"
+      />
+      <div
+        class="sc-bxivhb htFudt"
+        style="background: rgb(243, 38, 192);"
+      />
+      <div
+        class="sc-bxivhb htFudt"
+        style="background: rgb(199, 0, 86);"
+      />
+      <div
+        class="sc-bxivhb htFudt"
+        style="background: rgb(255, 193, 0);"
+      />
+      <div
+        class="sc-bxivhb htFudt"
+        style="background: rgb(255, 217, 25);"
+      />
+      <div
+        class="sc-bxivhb htFudt"
+        style="background: rgb(252, 203, 134);"
+      />
+      <div
+        class="sc-bxivhb htFudt"
+        style="background: rgb(255, 152, 0);"
+      />
+      <div
+        class="sc-bxivhb htFudt"
+        style="background: rgb(255, 101, 54);"
+      />
+      <div
+        class="sc-bxivhb htFudt"
+        style="background: rgb(102, 204, 136);"
+      />
+      <div
+        class="sc-bxivhb htFudt"
+        style="background: rgb(151, 224, 83);"
+      />
+      <div
+        class="sc-bxivhb htFudt"
+        style="background: rgb(204, 221, 30);"
+      />
+      <div
+        class="sc-bxivhb htFudt"
+        style="background: rgb(70, 175, 74);"
+      />
+      <div
+        class="sc-bxivhb htFudt"
+        style="background: rgb(0, 150, 135);"
+      />
+      <div
+        class="sc-bxivhb htFudt"
+        style="background: rgb(26, 143, 230);"
+      />
+      <div
+        class="sc-bxivhb htFudt"
+        style="background: rgb(48, 190, 255);"
+      />
+      <div
+        class="sc-bxivhb htFudt"
+        style="background: rgb(98, 223, 245);"
+      />
+      <div
+        class="sc-bxivhb htFudt"
+        style="background: rgb(0, 187, 213);"
+      />
+      <div
+        class="sc-bxivhb htFudt"
+        style="background: rgb(16, 67, 167);"
+      />
+      <div
+        class="sc-bxivhb htFudt"
+        style="background: rgb(117, 49, 228);"
+      />
+      <div
+        class="sc-bxivhb htFudt"
+        style="background: rgb(212, 111, 252);"
+      />
+      <div
+        class="sc-bxivhb htFudt"
+        style="background: rgb(218, 176, 255);"
+      />
+      <div
+        class="sc-bxivhb htFudt"
+        style="background: rgb(155, 58, 238);"
+      />
+      <div
+        class="sc-bxivhb htFudt"
+        style="background: rgb(156, 26, 177);"
+      />
+      <div
+        class="sc-bxivhb htFudt"
+        style="background: rgb(111, 117, 124);"
+      />
+      <div
+        class="sc-bxivhb htFudt"
+        style="background: rgb(157, 157, 157);"
+      />
+      <div
+        class="sc-bxivhb htFudt"
+        style="background: rgb(209, 209, 209);"
+      />
+      <div
+        class="sc-bxivhb jIedBS"
+        style="background: rgb(74, 74, 74);"
+      />
+      <div
+        class="sc-bxivhb htFudt"
+        style="background: rgb(20, 20, 20);"
+      />
+    </div>
+  </div>
+</div>
+`;
