@@ -5,10 +5,12 @@ import { Palette } from '~/Components/Palette';
 
 import { Container, Circle } from './styled';
 
-const ColorPicker: React.FC<{
+interface IColorPickerProps {
   activeColor: string;
   onChange: (color: string) => void;
-}> = ({ activeColor, onChange }) => {
+}
+
+const ColorPicker: React.FC<IColorPickerProps> = ({ activeColor, onChange }) => {
   const [color, setColor] = useState(activeColor);
   const [isVisible, setIsVisible] = useState(false);
 

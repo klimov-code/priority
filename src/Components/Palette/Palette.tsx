@@ -4,10 +4,12 @@ import { PALETTE } from '~/Constants';
 
 import { Container, Title, Colors, Color } from './styled';
 
-const Palette: React.FC<{
+interface IPaletteProps {
   setColor: (color: string) => void;
   activeColor: string;
-}> = ({ setColor, activeColor }) => (
+}
+
+const Palette: React.FC<IPaletteProps> = ({ setColor, activeColor }) => (
   <Container>
     <Title>{'Select color'}</Title>
     <Colors>
@@ -16,7 +18,6 @@ const Palette: React.FC<{
           style={{ background: color }}
           key={index}
           isActive={color === activeColor}
-          color={color}
           onClick={() => setColor(color)}
         />
       ))}
