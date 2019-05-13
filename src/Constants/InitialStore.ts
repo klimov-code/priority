@@ -1,6 +1,6 @@
 import { fromJS } from 'immutable';
 
-const InitialStore = {
+const INITIAL_STORE = {
   priority: fromJS({
     isFetching: false,
     lastUpdate: null,
@@ -12,4 +12,4 @@ const InitialStore = {
   }),
 };
 
-export { InitialStore };
+export { INITIAL_STORE };

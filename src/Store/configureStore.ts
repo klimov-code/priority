@@ -2,11 +2,11 @@ import { Store, createStore, applyMiddleware, combineReducers, compose } from 'r
 import createSagaMiddleware from 'redux-saga';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
-import { InitialStore } from '~/Constants';
+import { INITIAL_STORE } from '~/Constants';
 import { PriorityReducer } from '~/Reducers';
 import { watchPriority } from '~/Sagas';
 
-const configureStore = (initialStore = InitialStore): Store => {
+const configureStore = (initialStore = INITIAL_STORE): Store => {
   const composeEnhancers: any =
     process.env.NODE_ENV === 'development' ? composeWithDevTools : compose;
 
