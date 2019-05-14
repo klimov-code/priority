@@ -7,6 +7,8 @@ const validate = (priority: IPriority) => {
   if (priority.name.length > 60) {
     throw new Error('Name must not exceed 60 characters');
   }
+
+  return true;
 };
 
 export { validate };

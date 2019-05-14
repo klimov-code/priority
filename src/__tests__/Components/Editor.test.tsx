@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, fireEvent, waitForElement } from 'react-testing-library';
-import { Editor } from '~/Components';
+import { Editor } from 'Components';
 
 describe('Editor', () => {
   it('renders correctly', () => {
@@ -9,30 +9,50 @@ describe('Editor', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('sets "Name"', () => {
+  it('can add or update name', () => {
+    const newName = 'second';
     const { getByPlaceholderText } = render(<Editor name={'first'} />);
     const input = getByPlaceholderText('Name');
-    const newName = 'second';
 
     fireEvent.change(input, { target: { value: newName } });
 
     expect(input).toHaveProperty('value', newName);
   });
 
-  it('sets "Type"', async () => {
-    const { container, getByText } = render(<Editor />);
+  it('can add or update type', async () => {
     const targetType = 'Date range';
+    const { container, getByText } = render(<Editor />);
 
-    let input: HTMLElement;
-    await waitForElement(() => (input = container.querySelector('.type__input input')));
+    const input = await waitForElement(() => container.querySelector('.type__input input'));
     fireEvent.change(input, { target: { value: 'd' } });
 
     await waitForElement(() => container.querySelector('.type__menu'));
     const option = getByText(targetType);
     fireEvent.click(option);
 
-    let singleValue: HTMLElement;
-    await waitForElement(() => (singleValue = container.querySelector('.type__single-value')));
+    const singleValue = await waitForElement(() => container.querySelector('.type__single-value'));
     expect(singleValue.textContent).toBe(targetType);
+  });
+
+  it('can be made sub', async () => {
+    const priorityList = [
+      { value: 1, label: 'parent1' },
+      { value: 2, label: 'parent2' },
+      { value: 3, label: 'parent3' },
+    ];
+    const targetParent = 'parent2';
+    const { container, getByText } = render(
+      <Editor editorType={'create'} priorityList={priorityList} />
+    );
+
+    const input = await waitForElement(() => container.querySelector('.sub__input input'));
+    fireEvent.change(input, { target: { value: '2' } });
+
+    await waitForElement(() => container.querySelector('.sub__menu'));
+    const option = getByText(targetParent);
+    fireEvent.click(option);
+
+    const singleValue = await waitForElement(() => container.querySelector('.sub__single-value'));
+    expect(singleValue.textContent).toBe(targetParent);
   });
 });

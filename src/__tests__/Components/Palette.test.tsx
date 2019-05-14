@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-testing-library';
-import { Palette } from '~/Components/Palette';
+import { Palette } from 'Components/Palette';
 
 describe('Palette', () => {
   it('renders correctly', () => {
