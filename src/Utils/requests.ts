@@ -1,4 +1,4 @@
-import { IRequest } from '~/Definitions';
+import { IRequest } from 'Definitions';
 
 const headers = {
   headers: {

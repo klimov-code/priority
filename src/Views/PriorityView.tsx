@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { DragDropContext, DropResult, Draggable, Droppable } from 'react-beautiful-dnd';
 
-import { IPriority, IMeta, IValueLabel } from '~/Definitions';
-import { Header, Priority, Editor, Viewer } from '~/Components';
+import { IPriority, IMeta, IValueLabel } from 'Definitions';
+import { Header, Priority, Editor, Viewer } from 'Components';
 
 import { Container, ArchiveButton, CreateButton, Text } from './styled';
 

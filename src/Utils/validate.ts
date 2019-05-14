@@ -1,4 +1,4 @@
-import { IPriority } from '~/Definitions';
+import { IPriority } from 'Definitions';
 
 const validate = (priority: IPriority) => {
   if (!priority.name) {

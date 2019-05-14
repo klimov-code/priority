@@ -9,7 +9,7 @@
     "module": "esnext",
     "moduleResolution": "node",
     "paths": {
-      "~/*": ["*"]
+      "*": ["*"]
     },
     "outDir": "dist",
     "resolveJsonModule": true,

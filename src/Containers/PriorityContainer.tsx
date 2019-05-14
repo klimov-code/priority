@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
 
-import { IPriority, IMeta, IValueLabel, IStore } from '~/Definitions';
+import { IPriority, IMeta, IValueLabel, IStore } from 'Definitions';
 import {
   fetchRequest,
   createRequest,
@@ -10,9 +10,9 @@ import {
   reorderRequest,
   archiveRequest,
   restoreRequest,
-} from '~/Actions';
-import { PriorityView } from '~/Views';
-import { getActivePriority, getArchivePriority, getActivePriorityList } from '~/Selectors';
+} from 'Actions';
+import { PriorityView } from 'Views';
+import { getActivePriority, getArchivePriority, getActivePriorityList } from 'Selectors';
 
 const Container = styled.div`
   margin: 0 auto;

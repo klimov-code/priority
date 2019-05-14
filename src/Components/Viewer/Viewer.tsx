@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { TYPE } from '~/Constants';
-import { IPriority } from '~/Definitions';
-import { MenuBox } from '~/Components/MenuBox';
-import { Container as ColorContainer, Circle } from '~/Components/ColorPicker';
-import { Text, TextBold } from '~/Components/styled';
+import { TYPE } from 'Constants';
+import { IPriority } from 'Definitions';
+import { MenuBox } from 'Components/MenuBox';
+import { Container as ColorContainer, Circle } from 'Components/ColorPicker';
+import { Text, TextBold } from 'Components/styled';
 
 import { Container, Tooltip } from './styled';
 
@@ -20,7 +20,7 @@ const Viewer: React.FC<Partial<IViewerProps> & IPriority> = ({
   name,
   color,
   type,
-  isSubPriority,
+  isSubpriority,
   isArchived,
   parentPriority,
   setIsEdit,
@@ -28,7 +28,7 @@ const Viewer: React.FC<Partial<IViewerProps> & IPriority> = ({
   onRestore,
 }) => (
   <Container>
-    {isArchived && isSubPriority && (
+    {isArchived && isSubpriority && (
       <TextBold style={{ color: parentPriority.color }}>{parentPriority.name}</TextBold>
     )}
     <TextBold style={{ color }}>{name}</TextBold>

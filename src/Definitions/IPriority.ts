@@ -5,7 +5,7 @@ interface IPriority {
   parentId: number;
   type: number;
   order?: number;
-  isSubPriority?: boolean;
+  isSubpriority?: boolean;
   isArchived?: boolean;
   subpriorities?: IPriority[];
 }

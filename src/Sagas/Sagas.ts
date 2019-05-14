@@ -17,8 +17,8 @@ import {
   archiveFailure,
   restoreSuccess,
   restoreFailure,
-} from '~/Actions';
-import { getRequest, postRequest, putRequest, validate } from '~/Utils';
+} from 'Actions';
+import { getRequest, postRequest, putRequest, validate } from 'Utils';
 import priority from './priority.json';
 
 function* watchFetch() {

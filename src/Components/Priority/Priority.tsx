@@ -1,7 +1,7 @@
 import React from 'react';
 import { Draggable, Droppable } from 'react-beautiful-dnd';
 
-import { IPriority, IValueLabel, IMeta } from '~/Definitions';
+import { IPriority, IValueLabel, IMeta } from 'Definitions';
 
 import { Row } from './Row';
 

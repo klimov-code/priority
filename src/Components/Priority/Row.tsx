@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
-import { IPriority, IMeta, IValueLabel } from '~/Definitions';
-import { Editor } from '~/Components/Editor';
-import { Viewer } from '~/Components/Viewer';
+import { IPriority, IMeta, IValueLabel } from 'Definitions';
+import { Editor } from 'Components/Editor';
+import { Viewer } from 'Components/Viewer';
 
 interface IRow {
   priority: IPriority;

@@ -1,6 +1,6 @@
 import { Map } from 'immutable';
 
-import { IPriority } from '~/Definitions';
+import { IPriority } from 'Definitions';
 
 const getParentIndex = (store: Map<string, any>, priority: IPriority): number | undefined => {
   if (priority.parentId) {

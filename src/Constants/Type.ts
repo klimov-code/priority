@@ -1,4 +1,4 @@
-import { IValueLabel } from '~/Definitions';
+import { IValueLabel } from 'Definitions';
 
 const TYPE = {
   0: 'No date and time',

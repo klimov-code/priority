@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import Select from 'react-select';
 
-import { TYPE_LIST } from '~/Constants';
-import { IPriority, IMeta, IValueLabel } from '~/Definitions';
-import { ColorPicker } from '~/Components/ColorPicker';
-import { Button } from '~/Components/Button';
-import { Input } from '~/Components/Input';
+import { TYPE_LIST } from 'Constants';
+import { IPriority, IMeta, IValueLabel } from 'Definitions';
+import { ColorPicker } from 'Components/ColorPicker';
+import { Button } from 'Components/Button';
+import { Input } from 'Components/Input';
 
 import { Container, Top, Bottom } from './styled';
 
@@ -21,7 +21,7 @@ const Editor: React.FC<Partial<IEditor & IPriority>> = props => {
   const [name, setName] = useState(props.name);
   const [color, setColor] = useState(props.color || '#4a4a4a');
   const [type, setType] = useState(props.type);
-  const [isSubPriority, setIsSubPriority] = useState(props.isSubPriority);
+  const [isSubpriority, setIsSubpriority] = useState(props.isSubpriority);
   const [parentId, setParentId] = useState(props.parentId);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -29,13 +29,13 @@ const Editor: React.FC<Partial<IEditor & IPriority>> = props => {
     const { id, order, editorType, setIsEdit, onCreate, onUpdate } = props;
 
     if (editorType === 'create') {
-      onCreate({ name, color, type, isSubPriority, parentId }, { setIsEdit, setIsSubmitting });
+      onCreate({ name, color, type, isSubpriority, parentId }, { setIsEdit, setIsSubmitting });
 
       return;
     }
 
     onUpdate(
-      { id, order, name, color, type, isSubPriority, parentId },
+      { id, order, name, color, type, isSubpriority, parentId },
       { setIsEdit, setIsSubmitting }
     );
   };
@@ -48,7 +48,7 @@ const Editor: React.FC<Partial<IEditor & IPriority>> = props => {
           value={name}
           onChange={({ target: { value } }) => setName(value)}
         />
-        {!isSubPriority || !parentId ? (
+        {!isSubpriority || !parentId ? (
           <Select
             classNamePrefix={'type'}
             value={TYPE_LIST.find(({ value }) => value === type)}
@@ -72,7 +72,7 @@ const Editor: React.FC<Partial<IEditor & IPriority>> = props => {
             maxHeight={window.innerHeight - 200}
             onChange={(selected: IValueLabel) => {
               setParentId(selected.value);
-              setIsSubPriority(true);
+              setIsSubpriority(true);
             }}
           />
         ) : (
