@@ -31,8 +31,8 @@ const PriorityReducer = (store: Map<string, any> = null, action: any) => {
         ? ['data', 'active', parentIndex, 'subpriorities']
         : ['data', 'active'];
 
-      const active = store.getIn(keyPath);
-      const reordered = reorderList(active, startIndex, endIndex);
+      const list = store.getIn(keyPath);
+      const reordered = reorderList(list, startIndex, endIndex);
 
       return store.updateIn(keyPath, () => reordered);
     }
