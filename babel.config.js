@@ -9,12 +9,13 @@ module.exports = function(api) {
           esmodules: true,
         },
         useBuiltIns: 'usage',
+        corejs: 3,
       },
     ],
     '@babel/react',
     '@babel/typescript',
   ];
-  const plugins = ['@babel/transform-runtime'];
+  const plugins = [['@babel/transform-runtime', { corejs: 3 }]];
 
   return {
     presets,

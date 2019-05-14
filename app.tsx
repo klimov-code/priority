@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
-import '@babel/polyfill';
+import 'regenerator-runtime/runtime';
 
 import Priority, { configureStore } from './src';
 
