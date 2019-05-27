@@ -5,9 +5,6 @@ module.exports = function(api) {
     [
       '@babel/env',
       {
-        targets: {
-          esmodules: true,
-        },
         useBuiltIns: 'usage',
         corejs: 3,
       },
