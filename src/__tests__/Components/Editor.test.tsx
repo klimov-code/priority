@@ -9,7 +9,7 @@ describe('Editor', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('can add or update name', () => {
+  it('should add or update name', () => {
     const newName = 'second';
     const { getByPlaceholderText } = render(<Editor name={'first'} />);
     const input = getByPlaceholderText('Name');
@@ -19,7 +19,7 @@ describe('Editor', () => {
     expect(input).toHaveProperty('value', newName);
   });
 
-  it('can add or update type', async () => {
+  it('should add or update type', async () => {
     const targetType = 'Date range';
     const { container, getByText } = render(<Editor />);
 
@@ -34,7 +34,7 @@ describe('Editor', () => {
     expect(singleValue.textContent).toBe(targetType);
   });
 
-  it('can be made sub', async () => {
+  it('should be made a sub', async () => {
     const priorityList = [
       { value: 1, label: 'parent1' },
       { value: 2, label: 'parent2' },

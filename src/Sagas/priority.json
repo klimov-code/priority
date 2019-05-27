@@ -224,5 +224,39 @@
       "subpriorities": []
     }
   ],
-  "archive": []
+  "archive": [
+    {
+      "id": 592,
+      "name": "Отказ кандидата",
+      "color": "#ffc100",
+      "isSubpriority": false,
+      "type": 1,
+      "order": 7,
+      "isArchived": false,
+      "parentId": null,
+      "subpriorities": []
+    },
+    {
+      "id": 594,
+      "name": "Принят на работу",
+      "color": "#c70056",
+      "isSubpriority": false,
+      "type": 1,
+      "order": 8,
+      "isArchived": false,
+      "parentId": null,
+      "subpriorities": []
+    },
+    {
+      "id": 595,
+      "name": "Резерв",
+      "color": "#d1d1d1",
+      "isSubpriority": false,
+      "type": 0,
+      "order": 9,
+      "isArchived": false,
+      "parentId": null,
+      "subpriorities": []
+    }
+  ]
 }

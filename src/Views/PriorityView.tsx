@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { DragDropContext, DropResult, Draggable, Droppable } from 'react-beautiful-dnd';
 
 import { IPriority, IMeta, IValueLabel } from 'Definitions';
-import { Header, Priority, Editor, Viewer } from 'Components';
+import { Header, Priority, Editor, Viewer, Button } from 'Components';
 
-import { Container, ArchiveButton, CreateButton, Text } from './styled';
+import { Container, Text } from './styled';
 
-interface IView {
+interface IViewProps {
   active: IPriority[];
   archive: IPriority[];
   priorityList: IValueLabel[];
@@ -17,7 +17,7 @@ interface IView {
   onRestore: (id: number) => void;
 }
 
-const PriorityView: React.FC<IView> = ({
+const PriorityView: React.FC<IViewProps> = ({
   active,
   archive,
   priorityList,
@@ -62,7 +62,7 @@ const PriorityView: React.FC<IView> = ({
 
   return (
     <Container>
-      <CreateButton onClick={() => setIsEdit(true)}>{'Create'}</CreateButton>
+      <Button onClick={() => setIsEdit(true)}>{'Create'}</Button>
 
       <Header />
       {isEdit && (
@@ -108,9 +108,9 @@ const PriorityView: React.FC<IView> = ({
       )}
 
       {archive && (
-        <ArchiveButton onClick={() => setToggleArchive(!toggleArchive)}>
-          <Text>{toggleArchive ? 'Hide archive' : 'Show archive'}</Text>
-        </ArchiveButton>
+        <Button onClick={() => setToggleArchive(!toggleArchive)}>
+          {toggleArchive ? 'Hide archive' : 'Show archive'}
+        </Button>
       )}
 
       {toggleArchive && archive && (
